@@ -1,0 +1,10 @@
+let list1 = new SetLinkedList()
+for (let item of [10, 20, 30, 40, 50])
+  list1.addAtTail(item)
+list1.travelList((p) => console.log(p.data, list1.indexOf(p.data)))
+list1.updateData(300,10)
+list1.travelList((p) => console.log(p.data, list1.indexOf(p.data)))
+list1.updateIndex(200,3)
+list1.travelList((p) => console.log(p.data, list1.indexOf(p.data)))
+console.log(list1.length());
+list1.printList()
